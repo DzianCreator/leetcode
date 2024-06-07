@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmsTests", "AlgorithmsTests\AlgorithmsTests.csproj", "{D97B42F1-A0DB-4D84-A79F-4D592EF41A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csproj", "{C2818F71-0C25-4181-ADC8-07AB9B929CC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "TwoSum\TwoSum.csproj", "{C2818F71-0C25-4181-ADC8-07AB9B929CC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers", "AddTwoNumbers\AddTwoNumbers.csproj", "{D413ABFF-146B-41ED-B659-D333ECC346AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C2818F71-0C25-4181-ADC8-07AB9B929CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2818F71-0C25-4181-ADC8-07AB9B929CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2818F71-0C25-4181-ADC8-07AB9B929CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D413ABFF-146B-41ED-B659-D333ECC346AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D413ABFF-146B-41ED-B659-D333ECC346AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D413ABFF-146B-41ED-B659-D333ECC346AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D413ABFF-146B-41ED-B659-D333ECC346AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

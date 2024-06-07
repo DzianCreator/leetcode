@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AddTwoNumbers\AddTwoNumbers.csproj" />
     <ProjectReference Include="..\TwoSum\TwoSum.csproj" />
   </ItemGroup>
 
