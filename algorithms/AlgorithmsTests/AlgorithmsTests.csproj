@@ -17,8 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AddTwoNumbers\AddTwoNumbers.csproj" />
-    <ProjectReference Include="..\TwoSum\TwoSum.csproj" />
+    <ProjectReference Include="..\Algorithms\Algorithms.csproj" />
   </ItemGroup>
 
   <ItemGroup>

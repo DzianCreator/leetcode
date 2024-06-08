@@ -1,4 +1,4 @@
-﻿using AddTwoNumbers;
+﻿using Algorithms;
 
 namespace AlgorithmsTests
 {
@@ -9,7 +9,7 @@ namespace AlgorithmsTests
 		{
 			ListNode l1 = new();
 			ListNode l2 = new();
-			ListNode result = Calculation.AddTwoNumbers(l1, l2);
+			ListNode result = AddTwoNumbers.Calculate(l1, l2);
 			Assert.Equal(0, result.val);
 		}
 
@@ -22,7 +22,7 @@ namespace AlgorithmsTests
 			ListNode l23 = new(2);
 			ListNode l22 = new(9, l23);
 			ListNode l21 = new(6, l22);
-			ListNode result = Calculation.AddTwoNumbers(l11, l21);
+			ListNode result = AddTwoNumbers.Calculate(l11, l21);
 			Assert.Equal(7, result.val);
 			Assert.Equal(9, result.next.val);
 			Assert.Equal(9, result.next.next.val);
@@ -37,7 +37,7 @@ namespace AlgorithmsTests
 			ListNode l23 = new(5);
 			ListNode l22 = new(2, l23);
 			ListNode l21 = new(6, l22);
-			ListNode result = Calculation.AddTwoNumbers(l11, l21);
+			ListNode result = AddTwoNumbers.Calculate(l11, l21);
 			Assert.Equal(2, result.val);
 			Assert.Equal(9, result.next.val);
 			Assert.Equal(2, result.next.next.val);
@@ -52,7 +52,7 @@ namespace AlgorithmsTests
 			ListNode l11 = new(4, l12);
 			ListNode l22 = new(5);
 			ListNode l21 = new(6, l22);
-			ListNode result = Calculation.AddTwoNumbers(l11, l21);
+			ListNode result = AddTwoNumbers.Calculate(l11, l21);
 			Assert.Equal(0, result.val);
 			Assert.Equal(4, result.next.val);
 			Assert.Equal(6, result.next.next.val);
@@ -67,7 +67,7 @@ namespace AlgorithmsTests
 			ListNode l23 = new(3, l24);
 			ListNode l22 = new(7, l23);
 			ListNode l21 = new(6, l22);
-			ListNode result = Calculation.AddTwoNumbers(l11, l21);
+			ListNode result = AddTwoNumbers.Calculate(l11, l21);
 			Assert.Equal(1, result.val);
 			Assert.Equal(3, result.next.val);
 			Assert.Equal(4, result.next.next.val);
