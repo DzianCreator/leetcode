@@ -11,27 +11,6 @@ namespace Algorithms
 			{
 				return 0;
 			}
-			int[] nums = [];
-			if (nums1.Length == 0)
-			{
-				nums = nums2;
-			}
-			if (nums2.Length == 0)
-			{
-				nums = nums1;
-			}
-			if (nums.Length != 0)
-			{
-				int index = nums.Length / 2;
-				if (nums.Length % 2 == 0)
-				{
-					return (double)(nums[index] + nums[index - 1]) / 2;
-				}
-				else
-				{
-					return nums[index];
-				}
-			}
 			int i1 = 0;
 			int i2 = 0;
 			int prevNumber = 0;
