@@ -11,34 +11,41 @@ namespace Algorithms
 				return results;
 			}
 			Array.Sort(nums);
-			for (int i = 0; i < nums.Length && nums[i] <= 0; ++i)
+			for (int i = 0; i < nums.Length && nums[i] < 1; ++i)
 			{
-				if (i - 1 >= 0)
+				if (i > 0 && nums[i] == nums[i - 1])
 				{
-					if (nums[i] == nums[i - 1])
-					{
-						continue;
-					}
+					continue;
 				}
-				HashSet<int> candidates = [];
-				for (int j = i + 1; j < nums.Length; ++j)
+				int j = i + 1;
+				int k = nums.Length - 1;
+				while (j < k)
 				{
-					if (j - 2 >= i + 1)
+					int sum = nums[i] + nums[j] + nums[k];
+					if (sum == 0)
 					{
-						if (nums[j] == nums[j - 2])
+						results.Add([nums[i], nums[j], nums[k]]);
+						while (j < k && nums[j + 1] == nums[j])
 						{
-							continue;
+							j++;
 						}
+						j++;
 					}
-					int candidate = -nums[j];
-					if (candidates.Contains(candidate))
+					else if (sum < 0)
 					{
-						results.Add([nums[i], -nums[i] - nums[j], nums[j]]);
-						candidates.Remove(candidate);
+						while (j < k && nums[j + 1] == nums[j])
+						{
+							j++;
+						}
+						j++;
 					}
 					else
 					{
-						candidates.Add(nums[j] + nums[i]);
+						while (k > j && nums[k - 1] == nums[k])
+						{
+							k--;
+						}
+						k--;
 					}
 				}
 			}
